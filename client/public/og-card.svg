@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="Ryan Chung, freelance web developer">
+  <rect width="1200" height="630" fill="#0a0a0a"/>
+  <rect x="0.5" y="0.5" width="1199" height="629" fill="none" stroke="#1a1a18" stroke-width="1"/>
+  <g transform="translate(90 150)">
+    <g transform="translate(0 -40)">
+      <circle cx="7" cy="-6" r="7" fill="#5fbf45"/>
+      <text x="26" y="0" font-family="'Instrument Sans', system-ui, sans-serif" font-size="22" letter-spacing="3" fill="#8a8a88">FREELANCE WEB DEVELOPER</text>
+    </g>
+    <text x="0" y="90" font-family="Georgia, 'Times New Roman', serif" font-size="96" font-weight="500" fill="#f2f2f0">Ryan Chung</text>
+    <text x="0" y="185" font-family="Georgia, 'Times New Roman', serif" font-size="44" fill="#b0b0ae">Websites that win <tspan fill="#5fbf45">trust</tspan> before the</text>
+    <text x="0" y="245" font-family="Georgia, 'Times New Roman', serif" font-size="44" fill="#b0b0ae">first <tspan fill="#5fbf45">call</tspan>.</text>
+    <text x="0" y="360" font-family="'Instrument Sans', system-ui, sans-serif" font-size="24" fill="#6f6f6c">ryanchung.dev</text>
+  </g>
+</svg>

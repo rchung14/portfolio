@@ -1,0 +1,49 @@
+.mockup {
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.mockup__toolbar {
+  background: var(--chrome);
+  padding: 9px 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.mockup__dots {
+  display: inline-flex;
+  gap: 6px;
+}
+
+.mockup__dots span {
+  width: 9px;
+  height: 9px;
+  border-radius: 999px;
+  background: var(--dot);
+}
+
+.mockup__url {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--faint);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.mockup__screen {
+  aspect-ratio: 16 / 10;
+  background: var(--panel-tile);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mockup__placeholder {
+  font-family: var(--font-sans);
+  font-size: 12px;
+  color: var(--faint);
+  letter-spacing: 0.02em;
+}

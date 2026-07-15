@@ -1,0 +1,275 @@
+/* ============================================================
+   Design tokens
+   ============================================================ */
+:root {
+  --accent: #5fbf45; /* bright green — single swappable token */
+  --bg: #0a0a0a; /* page background */
+  --ink: #f2f2f0; /* primary headings */
+  --body: #b0b0ae; /* lead paragraphs */
+  --muted-body: #989896; /* card / description text */
+  --muted: #8a8a88; /* eyebrow labels, footer copy */
+  --faint: #6f6f6c; /* meta labels, URL text */
+  --quiet: #5a5a57; /* copyright line */
+  --nav-link: #b8b8b6; /* inactive nav links */
+  --line: rgba(229, 229, 229, 0.1); /* hairline borders */
+  --panel: #111110; /* project cards */
+  --panel-cta: #131311; /* CTA panels */
+  --panel-tile: #0d0d0c; /* contact tiles, mockup image area */
+  --chrome: #1a1a18; /* browser mockup toolbar */
+  --dot: #3a3a37; /* browser mockup dots */
+
+  --font-serif: 'Newsreader', Georgia, 'Times New Roman', serif;
+  --font-sans: 'Instrument Sans', system-ui, -apple-system, Segoe UI, Roboto,
+    Helvetica, Arial, sans-serif;
+  --font-mono: ui-monospace, Menlo, monospace;
+
+  --page-x: 40px;
+  --max-w: 1200px;
+}
+
+/* ============================================================
+   Reset
+   ============================================================ */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--body);
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+figure {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+button {
+  font-family: inherit;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* ============================================================
+   Accessibility helpers
+   ============================================================ */
+.skip-link {
+  position: fixed;
+  top: 8px;
+  left: 8px;
+  z-index: 200;
+  transform: translateY(-150%);
+  background: var(--accent);
+  color: #0a0a0a;
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: 14px;
+  padding: 10px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: transform 0.2s ease;
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* ============================================================
+   Layout primitives
+   ============================================================ */
+.container {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding-left: var(--page-x);
+  padding-right: var(--page-x);
+}
+
+.section-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  border-top: 1px solid var(--line);
+  padding-top: 44px;
+  margin-bottom: 56px;
+}
+
+.section-head__link {
+  font-size: 15px;
+  color: var(--nav-link);
+  text-decoration: none;
+  white-space: nowrap;
+  transition: color 0.2s ease;
+}
+
+.section-head__link:hover {
+  color: var(--accent);
+}
+
+/* ============================================================
+   Typography roles
+   ============================================================ */
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  font-family: var(--font-sans);
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.eyebrow--muted {
+  color: var(--muted);
+  font-weight: 500;
+}
+
+.eyebrow__dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 999px;
+  background: var(--accent);
+  flex: none;
+}
+
+.h2 {
+  font-family: var(--font-serif);
+  font-weight: 500;
+  font-size: clamp(32px, 4.4vw, 58px);
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+}
+
+.lead {
+  font-size: clamp(17px, 1.7vw, 21px);
+  line-height: 1.55;
+  color: var(--body);
+}
+
+/* Accent emphasis inside headings: colored, upright, never italic. */
+.accent-em {
+  color: var(--accent);
+  font-style: normal;
+  font-weight: 500;
+}
+
+/* ============================================================
+   Buttons
+   ============================================================ */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: 16px;
+  text-decoration: none;
+  border-radius: 999px;
+  padding: 15px 28px;
+  min-height: 44px;
+  transition: transform 0.25s ease, filter 0.25s ease, border-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.btn--filled {
+  background: var(--accent);
+  color: #0a0a0a;
+  border: 1px solid var(--accent);
+}
+
+.btn--outline {
+  background: transparent;
+  color: #e5e5e5;
+  border: 1px solid rgba(229, 229, 229, 0.2);
+}
+
+.btn--outline:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .btn--filled:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.06);
+  }
+}
+
+/* ============================================================
+   Scroll reveal (initial hidden state only when enabled pre-paint)
+   ============================================================ */
+.reveal-enabled [data-reveal] {
+  opacity: 0;
+  transform: translateY(24px);
+}
+
+.reveal-enabled [data-reveal].is-visible {
+  opacity: 1;
+  transform: none;
+  transition: opacity 0.8s cubic-bezier(0.2, 0.7, 0.2, 1),
+    transform 0.8s cubic-bezier(0.2, 0.7, 0.2, 1);
+  will-change: opacity, transform;
+}
+
+/* ============================================================
+   Reduced motion
+   ============================================================ */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ============================================================
+   Small screens
+   ============================================================ */
+@media (max-width: 640px) {
+  :root {
+    --page-x: 22px;
+  }
+}

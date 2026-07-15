@@ -1,0 +1,100 @@
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.contact-form__field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.contact-form__field label {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--faint);
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  font-family: var(--font-sans);
+  font-size: 16px;
+  color: var(--ink);
+  background: var(--panel-tile);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 14px 16px;
+  transition: border-color 0.2s ease;
+  resize: vertical;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: var(--quiet);
+}
+
+.contact-form input:hover,
+.contact-form textarea:hover {
+  border-color: rgba(229, 229, 229, 0.2);
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+/* Honeypot: removed from layout and assistive tech, but still fillable by bots. */
+.contact-form__hp {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.contact-form__foot {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: wrap;
+  margin-top: 4px;
+}
+
+.contact-form__foot .btn--filled:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+.contact-form__status {
+  font-size: 14px;
+  line-height: 1.4;
+  color: #e06a55;
+  margin: 0;
+}
+
+.contact-form--sent {
+  padding: 8px 0;
+}
+
+.contact-form__sent-title {
+  font-family: var(--font-serif);
+  font-weight: 500;
+  font-size: 26px;
+  color: var(--ink);
+  margin-bottom: 10px;
+}
+
+.contact-form__sent-body {
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--body);
+  max-width: 42ch;
+}

@@ -1,0 +1,135 @@
+/* Hero */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 160px 0 90px;
+}
+
+.hero__eyebrow {
+  margin-bottom: 34px;
+}
+
+.hero__title {
+  font-family: var(--font-serif);
+  font-weight: 500;
+  font-size: clamp(46px, 7.6vw, 112px);
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+  max-width: 1040px;
+}
+
+.hero__lead {
+  margin-top: 30px;
+  max-width: 580px;
+}
+
+.hero__ctas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 40px;
+}
+
+/* Work preview */
+.home-work {
+  padding: 70px 0 110px;
+}
+
+.home-work__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 28px;
+}
+
+/* Editorial index */
+.home-index {
+  padding: 0 0 110px;
+}
+
+.home-index__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.index-row {
+  display: grid;
+  grid-template-columns: 230px 1fr auto;
+  align-items: center;
+  gap: 24px;
+  padding: 30px 0;
+  border-top: 1px solid var(--line);
+  text-decoration: none;
+  transition: padding-left 0.35s ease;
+}
+
+.index-row:last-child {
+  border-bottom: 1px solid var(--line);
+}
+
+.index-row__kicker {
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.index-row__main {
+  display: block;
+}
+
+.index-row__title {
+  display: block;
+  font-family: var(--font-serif);
+  font-weight: 500;
+  font-size: clamp(22px, 2.4vw, 30px);
+  letter-spacing: -0.015em;
+  color: var(--ink);
+  margin-bottom: 8px;
+}
+
+.index-row__desc {
+  display: block;
+  font-size: 15px;
+  line-height: 1.55;
+  color: var(--muted-body);
+  max-width: 520px;
+}
+
+.index-row__arrow {
+  font-family: var(--font-serif);
+  font-size: 24px;
+  color: #4a4a47;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .index-row:hover {
+    padding-left: 14px;
+  }
+  .index-row:hover .index-row__arrow {
+    color: var(--accent);
+    transform: translateX(4px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .index-row:hover .index-row__arrow {
+    color: var(--accent);
+  }
+}
+
+@media (max-width: 768px) {
+  .index-row {
+    grid-template-columns: 1fr auto;
+    gap: 6px 16px;
+    align-items: start;
+  }
+  .index-row__kicker {
+    grid-column: 1 / -1;
+    margin-bottom: 6px;
+  }
+}
