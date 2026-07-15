@@ -25,8 +25,8 @@ export default function Home() {
           </h1>
           <p className="lead hero__lead">
             I design and build fast, credible sites for law firms, financial
-            consultants, and recruiting agencies, the kind of firms that sell trust
-            for a living.
+            consultants, and recruiting agencies, where the website is often the
+            first thing a prospective client judges you on.
           </p>
           <div className="hero__ctas">
             <Link to="/work" className="btn btn--filled">

@@ -12,9 +12,9 @@ export const projects = [
     industry: 'Financial',
     industryLong: 'Financial services',
     status: 'completed',
-    tagline: 'A credit-risk advisory firm’s site, precise and quietly authoritative.',
+    tagline: 'A credit-risk advisory firm’s site, kept precise and low-key.',
     description:
-      'CRF Advisors reviews loan portfolios and credit risk for banks and credit unions, work where precision is the entire product. The site needed to signal exactly that: measured, credible, and clear about a technical service without burying a first-time visitor in jargon. I structured it around their core practice areas and gave prospective institutions a direct path to start a conversation.',
+      'CRF Advisors reviews loan portfolios and credit risk for banks and credit unions. Precision is basically their product, so the site had to read as measured and credible while still explaining a technical service in plain terms. I organized it around their main practice areas and made it easy for an institution to get in touch.',
     role: 'Design & development',
     stack: 'React, Node',
     year: '2024',
@@ -30,9 +30,9 @@ export const projects = [
     industry: 'Recruiting',
     industryLong: 'Recruiting',
     status: 'completed',
-    tagline: 'A recruiting firm’s site built around the one thing they sell: certainty.',
+    tagline: 'A recruiting firm’s site built around their 90-day placement guarantee.',
     description:
-      'The Wheaton Group places hard-to-fill roles for federal contractors and professional-services firms, backed by a 90-day guarantee. Recruiting sites tend to blur together, so the brief was to sound like none of them. We built the site around results and reliability, and let that single promise carry every page.',
+      'The Wheaton Group places hard-to-fill roles for federal contractors and professional-services firms, backed by a 90-day guarantee. Most recruiting sites read the same way, so we leaned on the guarantee as the thing that sets them apart and built the pages around it.',
     role: 'Design & development',
     stack: 'React, Node',
     year: '2025',
@@ -50,7 +50,7 @@ export const projects = [
     status: 'in-progress',
     tagline: 'A real-estate law practice’s new site, in active development.',
     description:
-      'Kim, Choi & Kim handle residential and commercial real estate closings across New Jersey and Washington DC, with counsel in both Korean and English. The build, currently in progress, rebuilds their site around practice areas and makes it easy for a first-time buyer to reach the right attorney without friction.',
+      'Kim, Choi & Kim handle residential and commercial real estate closings across New Jersey and Washington DC, with counsel in both Korean and English. The new site, currently in progress, is organized around their practice areas so a first-time buyer can quickly reach the right attorney.',
     role: 'Design & development',
     stack: 'React',
     year: '2026',

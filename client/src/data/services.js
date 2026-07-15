@@ -5,9 +5,9 @@ export const services = [
     kicker: 'Engineering',
     title: 'React & Node web apps',
     short:
-      'Custom-built, documented, and maintainable. The kind of code a future developer can actually read.',
+      'Built from scratch and documented, so the next developer can pick it up without guesswork.',
     paragraph:
-      'Custom-built, never templated. I build the front end in React and back it with a solid Node service that stays clean, documented, and maintainable, so the site is an asset your team can grow into rather than something you will want to rebuild in two years.',
+      'I build the front end in React and back it with a Node service that stays clean and well-documented. The aim is a site your team can grow into, rather than one you are quietly planning to replace in two years.',
     bullets: [
       'Component-driven front end, no page-builder bloat',
       'Forms, booking, and CMS wired to a Node backend',
@@ -19,9 +19,9 @@ export const services = [
     kicker: 'Visibility',
     title: 'SEO-ready builds',
     short:
-      'Structure, speed, and semantics baked in from the first commit, not retrofitted after.',
+      'Fast, cleanly structured, and readable to search engines from the first commit rather than patched in later.',
     paragraph:
-      'Search visibility is not a plugin you bolt on later. It is structure, speed, and semantics baked in from the first commit. I build sites that load fast, render cleanly for crawlers, and give you room to rank for the terms your clients actually search.',
+      'Good search performance comes from how a site is built, not a plugin added at the end. I keep the markup semantic, the pages fast, and the structure mapped to how your clients actually search, so you have room to rank for the terms that matter.',
     bullets: [
       'Semantic markup and structured data',
       'Core Web Vitals in the green on launch',
@@ -35,9 +35,9 @@ export const services = [
     short:
       'Law, finance, and recruiting. I know the tone and the credibility signals before you explain them.',
     paragraph:
-      'I work almost exclusively with firms that sell trust: law, finance, and recruiting. That focus means I already understand the tone, the compliance edges, and the credibility signals that turn a cautious visitor into a booked call. You spend less time explaining your world to me.',
+      'I work almost exclusively with law firms, financial consultants, and recruiters. Because I already understand the tone these firms need and the compliance lines to stay inside, you spend less time explaining your world to me and the site sounds right sooner.',
     bullets: [
-      'Messaging that reads as authoritative, not salesy',
+      'Messaging that carries authority without sounding like a pitch',
       'Compliance- and disclaimer-aware content flows',
       'Conversion paths tuned for considered, high-value buyers',
     ],

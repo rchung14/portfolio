@@ -16,8 +16,8 @@ export default function Services() {
             A small menu, done <em className="accent-em">properly</em>.
           </h1>
           <p className="lead services-head__lead">
-            I keep the offering narrow on purpose. Three things, done to a standard,
-            not a checklist of everything an agency might upsell you.
+            I keep the offering narrow on purpose: three things, done to a standard,
+            instead of the long menu an agency would try to upsell you.
           </p>
         </Reveal>
       </header>

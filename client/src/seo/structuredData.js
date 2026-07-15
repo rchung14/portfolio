@@ -43,11 +43,11 @@ export const structuredData = {
     ),
     service(
       'SEO-ready builds',
-      'Structure, speed, and semantics baked in from the first commit.',
+      'Fast, semantic, cleanly structured sites built to rank from launch.',
     ),
     service(
       'Professional-services focus',
-      'Websites for law, finance, and recruiting firms that sell trust.',
+      'Websites for law firms, financial consultants, and recruiting agencies.',
     ),
   ],
   '/about': [professionalService, person],

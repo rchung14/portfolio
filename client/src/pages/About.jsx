@@ -13,12 +13,12 @@ const WORK_CELLS = [
   {
     kicker: 'Deliberate',
     title: 'A few projects at a time',
-    body: 'I take on a small number of clients so each one gets real attention, not a slot in a production line.',
+    body: 'I take on a small number of clients at once, so each project gets real attention and a schedule that actually holds.',
   },
   {
     kicker: 'Durable',
     title: 'Built to last past launch',
-    body: 'Clean, documented code you own outright. No proprietary lock-in, no surprise dependency on me.',
+    body: 'Clean, documented code that you own outright. You can hand it to another developer whenever you like without untangling anything proprietary.',
   },
 ];
 
@@ -35,16 +35,17 @@ export default function About() {
             I build real things for <em className="accent-em">real</em> businesses.
           </h1>
           <p className="about-intro__para">
-            I’m Ryan, a freelance web developer who’s spent the last several years
-            building websites for firms that live or die on credibility. Law
-            practices, financial consultants, recruiting agencies: businesses where a
-            website isn’t decoration, it’s the first handshake.
+            I’m Ryan, a freelance web developer. For the last several years I’ve
+            built sites for firms whose reputation is most of what they sell: law
+            practices, financial consultants, recruiting agencies. For a business
+            like that, the website is usually where a prospective client forms a
+            first impression.
           </p>
           <p className="about-intro__para">
-            I work solo and stay hands-on from first call to launch. No account
-            managers, no offshore handoffs, no template dressed up as bespoke. Just
-            one developer who cares that the thing works and reads as serious as you
-            are.
+            I work solo and stay hands-on from the first call to launch. You deal
+            with me directly the whole way, and the site gets built for your firm
+            rather than adapted from a template. I care that it works and that it
+            reads as seriously as you take your own business.
           </p>
         </Reveal>
 
@@ -85,8 +86,8 @@ export default function About() {
               Have a project? <em className="accent-em">Let’s talk.</em>
             </h2>
             <p className="about-contact__para">
-              Tell me about the firm, the timeline, and what the current site isn’t
-              doing. I’ll tell you honestly whether I’m the right fit.
+              Tell me about the firm, the timeline, and where the current site is
+              falling short. I’ll let you know whether I’m the right fit.
             </p>
 
             <div className="about-contact__tiles">
