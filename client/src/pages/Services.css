@@ -1,5 +1,5 @@
 .services-head {
-  padding: 180px 0 40px;
+  padding: clamp(128px, 16vh, 180px) 0 40px;
 }
 
 .services-head__title {
@@ -89,8 +89,8 @@
 }
 
 .service-row__bullets li span:last-child {
-  font-size: 15px;
-  line-height: 1.5;
+  font-size: 16px;
+  line-height: 1.55;
   color: var(--ink);
 }
 

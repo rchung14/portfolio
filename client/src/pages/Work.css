@@ -1,5 +1,5 @@
 .work-head {
-  padding: 180px 0 70px;
+  padding: clamp(128px, 16vh, 180px) 0 70px;
 }
 
 .work-head__title {

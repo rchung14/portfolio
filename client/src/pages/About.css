@@ -1,6 +1,6 @@
 /* Intro */
 .about-intro {
-  padding: 180px 0 70px;
+  padding: clamp(128px, 16vh, 180px) 0 70px;
   display: grid;
   grid-template-columns: 1.3fr 1fr;
   gap: 64px;
@@ -89,7 +89,7 @@
 }
 
 .about-cell__body {
-  font-size: 15px;
+  font-size: 16px;
   line-height: 1.6;
   color: var(--muted-body);
 }

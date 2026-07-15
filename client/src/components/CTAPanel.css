@@ -1,14 +1,14 @@
 .cta {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 40px var(--page-x) 110px;
+  padding: 0 var(--page-x) var(--section-gap);
 }
 
 .cta__panel {
   background: var(--panel-cta);
   border: 1px solid var(--line);
-  border-radius: 22px;
-  padding: clamp(48px, 8vw, 100px) clamp(32px, 6vw, 80px);
+  border-radius: 20px;
+  padding: clamp(56px, 8vw, 84px) clamp(32px, 6vw, 80px);
   text-align: center;
 }
 
