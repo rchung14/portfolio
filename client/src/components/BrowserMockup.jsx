@@ -1,9 +1,17 @@
 import './BrowserMockup.css';
 
-// Browser-chrome frame with a placeholder screenshot area. The client drops
-// real screenshots into the image area later; until then it shows a labeled
-// placeholder (no placeholder image file, so nothing to forget to replace).
-export default function BrowserMockup({ url, className = '' }) {
+// Browser-chrome frame. Renders a real screenshot when `image` is provided,
+// otherwise a labeled placeholder. Screenshots are cropped to the site's hero
+// and shown top-anchored so the frame reads like a live browser window.
+export default function BrowserMockup({
+  url,
+  className = '',
+  image,
+  imageAlt,
+  imageWidth,
+  imageHeight,
+  loading = 'lazy',
+}) {
   return (
     <div className={`mockup ${className}`.trim()}>
       <div className="mockup__toolbar">
@@ -15,7 +23,19 @@ export default function BrowserMockup({ url, className = '' }) {
         <span className="mockup__url">{url}</span>
       </div>
       <div className="mockup__screen">
-        <span className="mockup__placeholder">Screenshot: {url}</span>
+        {image ? (
+          <img
+            className="mockup__img"
+            src={image}
+            alt={imageAlt || `Screenshot of ${url}`}
+            width={imageWidth}
+            height={imageHeight}
+            loading={loading}
+            decoding="async"
+          />
+        ) : (
+          <span className="mockup__placeholder">Screenshot: {url}</span>
+        )}
       </div>
     </div>
   );

@@ -11,7 +11,14 @@ function CaseArticle({ project, index }) {
     <Reveal as="article" className={`case${index % 2 === 1 ? ' case--reverse' : ''}`}>
       <div className="case__media">
         {p.status === 'in-progress' && <span className="case__badge">In progress</span>}
-        <BrowserMockup url={p.url} className="case__mockup" />
+        <BrowserMockup
+          url={p.url}
+          className="case__mockup"
+          image={p.image}
+          imageAlt={`${p.name} website homepage`}
+          imageWidth={p.imageWidth}
+          imageHeight={p.imageHeight}
+        />
       </div>
       <div className="case__body">
         <p className="case__kicker">{p.industryLong || p.industry}</p>

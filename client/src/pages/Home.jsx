@@ -56,6 +56,9 @@ export default function Home() {
                 industry={p.industry}
                 description={p.tagline}
                 status={p.status}
+                image={p.image}
+                imageWidth={p.imageWidth}
+                imageHeight={p.imageHeight}
               />
             </Reveal>
           ))}

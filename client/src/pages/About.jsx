@@ -51,10 +51,10 @@ export default function About() {
         <Reveal className="about-intro__portrait">
           <div className="about-portrait">
             <img
-              src="/images/portrait-placeholder.svg"
+              src="/images/portrait.webp"
               alt="Ryan Chung, freelance web developer"
-              width="800"
-              height="1000"
+              width="881"
+              height="760"
               fetchPriority="high"
             />
           </div>

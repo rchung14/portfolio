@@ -2,14 +2,30 @@ import { Link } from 'react-router-dom';
 import BrowserMockup from './BrowserMockup.jsx';
 import './ProjectCard.css';
 
-export default function ProjectCard({ url, name, industry, description, status }) {
+export default function ProjectCard({
+  url,
+  name,
+  industry,
+  description,
+  status,
+  image,
+  imageWidth,
+  imageHeight,
+}) {
   return (
     <Link to="/work" className="project-card" aria-label={`${name}, ${industry}`}>
       <div className="project-card__media">
         {status === 'in-progress' && (
           <span className="project-card__badge">In progress</span>
         )}
-        <BrowserMockup url={url} className="project-card__mockup" />
+        <BrowserMockup
+          url={url}
+          className="project-card__mockup"
+          image={image}
+          imageAlt={`${name} website homepage`}
+          imageWidth={imageWidth}
+          imageHeight={imageHeight}
+        />
       </div>
       <div className="project-card__body">
         <div className="project-card__head">
