@@ -25,6 +25,7 @@ export default function ProjectCard({
           imageAlt={`${name} website homepage`}
           imageWidth={imageWidth}
           imageHeight={imageHeight}
+          sizes="(min-width: 1129px) 350px, (min-width: 743px) 465px, calc(100vw - 76px)"
         />
       </div>
       <div className="project-card__body">

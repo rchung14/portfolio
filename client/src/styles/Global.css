@@ -8,8 +8,8 @@
   --body: #b0b0ae; /* lead paragraphs */
   --muted-body: #989896; /* card / description text */
   --muted: #8a8a88; /* eyebrow labels, footer copy */
-  --faint: #6f6f6c; /* meta labels, URL text */
-  --quiet: #5a5a57; /* copyright line */
+  --faint: #8c8c89; /* meta labels, URL text — 5.23:1 vs --bg */
+  --quiet: #848481; /* copyright line — 4.70:1 vs --bg */
   --nav-link: #b8b8b6; /* inactive nav links */
   --line: rgba(229, 229, 229, 0.1); /* hairline borders */
   --panel: #111110; /* project cards */

@@ -6,11 +6,21 @@
     <meta name="theme-color" content="#0a0a0a" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Self-hosted fonts (see src/styles/fonts.css). Preloading both covers
+         every weight in use: each file is a single variable-font instance. -->
     <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap"
+      rel="preload"
+      href="/fonts/instrument-sans-latin.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/fonts/newsreader-latin.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
     />
 
     <script>

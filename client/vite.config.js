@@ -7,12 +7,27 @@ import react from '@vitejs/plugin-react';
 //
 // In dev, /api requests proxy to the local Express server (see ../server) so
 // the contact form works without CORS or a hardcoded base URL.
-export default defineConfig({
+export default defineConfig(({ isSsrBuild }) => ({
   plugins: [react()],
   build: {
     outDir: 'dist',
     emptyOutDir: true,
     assetsInlineLimit: 0, // never inline images/assets as base64
+    rollupOptions: {
+      output: {
+        // Client-only: route-level code splitting (React.lazy) isn't used —
+        // entry-server.jsx calls the synchronous renderToString, which can't
+        // await a lazy chunk during prerender and would ship empty <main>
+        // markup for every route but the one rendered eagerly. Splitting
+        // vendor from app code is the safe subset of the win — smaller,
+        // cacheable initial payload with no risk to prerendered output.
+        // Skipped for the SSR build: react/react-dom/react-router-dom are
+        // external there, and can't be named in manualChunks.
+        ...(isSsrBuild
+          ? {}
+          : { manualChunks: { vendor: ['react', 'react-dom', 'react-router-dom'] } }),
+      },
+    },
   },
   server: {
     proxy: {
@@ -22,4 +37,4 @@ export default defineConfig({
       },
     },
   },
-});
+}));

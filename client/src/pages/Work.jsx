@@ -18,6 +18,7 @@ function CaseArticle({ project, index }) {
           imageAlt={`${p.name} website homepage`}
           imageWidth={p.imageWidth}
           imageHeight={p.imageHeight}
+          sizes="(min-width: 861px) 620px, (min-width: 641px) 90vw, calc(100vw - 44px)"
         />
       </div>
       <div className="case__body">
