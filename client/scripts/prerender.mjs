@@ -2,7 +2,14 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { pathToFileURL } from 'node:url';
 
-import { ROUTES, SITE_URL, OG_IMAGE, GSC_VERIFICATION } from '../src/config.js';
+import {
+  ROUTES,
+  LEGAL_ROUTES,
+  SITE_URL,
+  OG_IMAGE,
+  OG_IMAGE_WIDTH,
+  OG_IMAGE_HEIGHT,
+} from '../src/config.js';
 import { routesMeta } from '../src/seo/routesMeta.js';
 import { structuredData } from '../src/seo/structuredData.js';
 
@@ -33,17 +40,19 @@ function buildHead({ title, description, canonical, jsonLd = [], noindex = false
     `<title>${escapeText(title)}</title>`,
     `<meta name="description" content="${escapeAttr(description)}" />`,
     `<link rel="canonical" href="${escapeAttr(canonical)}" />`,
-    `<meta name="google-site-verification" content="${escapeAttr(GSC_VERIFICATION)}" />`,
     noindex ? '<meta name="robots" content="noindex" />' : '',
     `<meta property="og:title" content="${escapeAttr(title)}" />`,
     `<meta property="og:description" content="${escapeAttr(description)}" />`,
     `<meta property="og:url" content="${escapeAttr(canonical)}" />`,
     `<meta property="og:image" content="${escapeAttr(OG_IMAGE)}" />`,
+    `<meta property="og:image:width" content="${OG_IMAGE_WIDTH}" />`,
+    `<meta property="og:image:height" content="${OG_IMAGE_HEIGHT}" />`,
     `<meta property="og:type" content="website" />`,
     `<meta property="og:locale" content="en_US" />`,
     `<meta name="twitter:card" content="summary_large_image" />`,
     `<meta name="twitter:title" content="${escapeAttr(title)}" />`,
     `<meta name="twitter:description" content="${escapeAttr(description)}" />`,
+    `<meta name="twitter:image" content="${escapeAttr(OG_IMAGE)}" />`,
   ];
 
   for (const block of jsonLd) {
@@ -71,8 +80,9 @@ function writePage(route, head, appHtml) {
 }
 
 // --- Prerender each known route -------------------------------------------
+// Legal routes are prerendered and indexable, but excluded from the sitemap.
 const written = [];
-for (const route of ROUTES) {
+for (const route of [...ROUTES, ...LEGAL_ROUTES]) {
   const meta = routesMeta[route];
   if (!meta) {
     throw new Error(`No routesMeta entry for ${route}`);

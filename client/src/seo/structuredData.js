@@ -1,7 +1,14 @@
-import { SITE_URL, EMAIL } from '../config.js';
+import { SITE_URL, SITE_NAME, EMAIL, LINKEDIN_URL } from '../config.js';
 
 // JSON-LD blocks per route. The prerender script serializes these into
 // <script type="application/ld+json"> tags baked into each static HTML file.
+
+const website = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: SITE_NAME,
+  url: SITE_URL,
+};
 
 const professionalService = {
   '@context': 'https://schema.org',
@@ -11,7 +18,7 @@ const professionalService = {
   url: SITE_URL,
   email: EMAIL,
   areaServed: 'US',
-  sameAs: [],
+  sameAs: [LINKEDIN_URL],
 };
 
 const person = {
@@ -21,6 +28,7 @@ const person = {
   jobTitle: 'Freelance Web Developer',
   email: EMAIL,
   url: SITE_URL,
+  sameAs: [LINKEDIN_URL],
 };
 
 const service = (name, description) => ({
@@ -33,7 +41,7 @@ const service = (name, description) => ({
 });
 
 export const structuredData = {
-  '/': [professionalService],
+  '/': [website, professionalService],
   '/work': [professionalService],
   '/services': [
     professionalService,

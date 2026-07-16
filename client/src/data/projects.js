@@ -12,6 +12,11 @@ export const projects = [
     industry: 'Law firm',
     industryLong: 'Real estate law',
     status: 'in-progress',
+    // Temporary: KCK is unlaunched client work on a public *.vercel.app URL.
+    // Flag it nofollow so we don't pass link equity to an unfinished preview.
+    // Remove once the site launches on its own domain. Note: the KCK repo also
+    // needs X-Robots-Tag: noindex until launch (see PR summary — other repo).
+    temporaryLink: true,
     tagline: "A real-estate law practice's new site, in active development.",
     description:
       'Kim, Choi & Kim handle residential and commercial real estate closings across New Jersey and Washington DC, with counsel in both Korean and English. The new site, currently in progress, is organized around their practice areas so a first-time buyer can quickly reach the right attorney.',

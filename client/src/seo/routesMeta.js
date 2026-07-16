@@ -29,4 +29,22 @@ export const routesMeta = {
       'Freelance developer working solo with law, finance, and recruiting firms. See how Ryan works, why he keeps the client list small, and how to get in touch.',
     canonical: 'https://ryanchung.dev/about',
   },
+  '/privacy': {
+    title: 'Privacy Policy | Ryan Chung',
+    description:
+      'What the ryanchung.dev contact form collects, why, and how it is handled. No analytics, no tracking, no data sold — plain-language privacy policy.',
+    canonical: 'https://ryanchung.dev/privacy',
+  },
+  '/terms': {
+    title: 'Terms of Service | Ryan Chung',
+    description:
+      'Terms governing use of ryanchung.dev: content ownership, informational use, no warranty, and limitation of liability.',
+    canonical: 'https://ryanchung.dev/terms',
+  },
+  '/accessibility': {
+    title: 'Accessibility Statement | Ryan Chung',
+    description:
+      'Accessibility commitment for ryanchung.dev, targeting WCAG 2.1 AA — semantic HTML, keyboard navigation, contrast, and how to report a barrier.',
+    canonical: 'https://ryanchung.dev/accessibility',
+  },
 };

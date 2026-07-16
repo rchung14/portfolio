@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { routesMeta } from '../seo/routesMeta.js';
-import { OG_IMAGE } from '../config.js';
+import { OG_IMAGE, OG_IMAGE_WIDTH, OG_IMAGE_HEIGHT } from '../config.js';
 
 // Head is baked into every prerendered route at build time (see
 // scripts/prerender.mjs), which is what search crawlers and social scrapers
@@ -39,8 +39,11 @@ export default function Seo({ route }) {
     setMeta('meta[property="og:description"]', 'content', meta.description);
     setMeta('meta[property="og:url"]', 'content', meta.canonical);
     setMeta('meta[property="og:image"]', 'content', OG_IMAGE);
+    setMeta('meta[property="og:image:width"]', 'content', String(OG_IMAGE_WIDTH));
+    setMeta('meta[property="og:image:height"]', 'content', String(OG_IMAGE_HEIGHT));
     setMeta('meta[name="twitter:title"]', 'content', meta.title);
     setMeta('meta[name="twitter:description"]', 'content', meta.description);
+    setMeta('meta[name="twitter:image"]', 'content', OG_IMAGE);
   }, [route, meta]);
 
   return null;

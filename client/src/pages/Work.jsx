@@ -43,7 +43,11 @@ function CaseArticle({ project, index }) {
             className="case__visit"
             href={p.liveUrl}
             target="_blank"
-            rel="noopener noreferrer"
+            rel={
+              p.temporaryLink
+                ? 'nofollow noopener noreferrer'
+                : 'noopener noreferrer'
+            }
           >
             {p.status === 'in-progress' ? 'View preview' : 'Visit site'} →
           </a>

@@ -50,8 +50,33 @@
   color: var(--accent);
 }
 
-.footer__copyright {
+.footer__bottom {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 14px 28px;
   margin-top: 40px;
+}
+
+.footer__copyright {
   font-size: 13px;
   color: var(--quiet);
+}
+
+.footer__legal {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer__legal a {
+  font-size: 13px;
+  color: var(--faint);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer__legal a:hover {
+  color: var(--accent);
 }
