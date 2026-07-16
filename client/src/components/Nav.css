@@ -129,7 +129,7 @@
 
 /* Mobile drawer */
 .nav__drawer {
-  display: flex;
+  display: none;
   flex-direction: column;
   gap: 4px;
   padding: 8px var(--page-x) 22px;
@@ -137,6 +137,10 @@
   -webkit-backdrop-filter: blur(14px);
   backdrop-filter: blur(14px);
   border-bottom: 1px solid var(--line);
+}
+
+.nav__drawer.is-open {
+  display: flex;
 }
 
 .nav__drawer-link {
