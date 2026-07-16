@@ -20,11 +20,13 @@ export default function Nav() {
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
-  // Lock body scroll while the mobile drawer is open.
+  // Lock scroll while the mobile drawer is open.
+  // Set on <html> not <body> — iOS Safari blocks touch events on fixed elements
+  // when overflow:hidden is on body.
   useEffect(() => {
-    document.body.style.overflow = open ? 'hidden' : '';
+    document.documentElement.style.overflow = open ? 'hidden' : '';
     return () => {
-      document.body.style.overflow = '';
+      document.documentElement.style.overflow = '';
     };
   }, [open]);
 
@@ -66,7 +68,7 @@ export default function Nav() {
       <div
         id="nav-drawer"
         className={`nav__drawer${open ? ' is-open' : ''}`}
-        hidden={!open}
+        aria-hidden={!open}
       >
         {LINKS.map((link) => (
           <NavLink
