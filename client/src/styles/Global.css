@@ -2,8 +2,8 @@
    Design tokens
    ============================================================ */
 :root {
-  --accent: #5fbf45; /* bright green — single swappable token */
-  --bg: #0a0a0a; /* page background */
+  --accent: #599149; /* green — single swappable token */
+  --bg: #191919; /* page background */
   --ink: #f2f2f0; /* primary headings */
   --body: #b0b0ae; /* lead paragraphs */
   --muted-body: #989896; /* card / description text */

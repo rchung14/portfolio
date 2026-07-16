@@ -5,6 +5,7 @@ import './Nav.css';
 const LINKS = [
   { to: '/work', label: 'Work' },
   { to: '/services', label: 'Services' },
+  { to: '/pricing', label: 'Pricing' },
   { to: '/about', label: 'About' },
 ];
 

@@ -17,6 +17,12 @@ export const routesMeta = {
       'React & Node web apps, SEO-ready builds, and professional-services focus. Three services, done to a standard.',
     canonical: 'https://ryanchung.dev/services',
   },
+  '/pricing': {
+    title: 'Pricing | Ryan Chung, Freelance Web Developer',
+    description:
+      'Custom site builds from $3,500 and ongoing care plans from $100/mo. Scope-based quotes for professional-services firms — every project starts with a conversation.',
+    canonical: 'https://ryanchung.dev/pricing',
+  },
   '/about': {
     title: 'About | Ryan Chung, Freelance Web Developer',
     description:

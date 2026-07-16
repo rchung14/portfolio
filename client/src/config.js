@@ -6,7 +6,7 @@ export const SITE_NAME = 'Ryan Chung';
 
 export const EMAIL = 'ryanchung14@gmail.com';
 
-export const LINKEDIN_URL = 'https://www.linkedin.com/';
+export const LINKEDIN_URL = 'https://www.linkedin.com/in/ryanchungcredit/';
 
 // Placeholder social card ships as SVG. Replace with a 1200x630 PNG named
 // og-card.png (and update this constant) for best cross-platform scraping.
@@ -16,7 +16,7 @@ export const OG_IMAGE = `${SITE_URL}/og-card.svg`;
 // real code from Search Console before deploying.
 export const GSC_VERIFICATION = 'PASTE_GSC_CODE_HERE';
 
-export const ROUTES = ['/', '/work', '/services', '/about'];
+export const ROUTES = ['/', '/work', '/services', '/pricing', '/about'];
 
 // Base origin for the contact API. Empty in dev (Vite proxies /api to the
 // local server); set VITE_API_BASE to the deployed server URL in production.

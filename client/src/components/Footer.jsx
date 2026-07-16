@@ -21,13 +21,14 @@ export default function Footer() {
             <Link to="/">Home</Link>
             <Link to="/work">Work</Link>
             <Link to="/services">Services</Link>
+            <Link to="/pricing">Pricing</Link>
             <Link to="/about">About</Link>
             <a href={`mailto:${EMAIL}`}>Email</a>
           </nav>
         </div>
 
         <p className="footer__copyright">
-          © 2026 Ryan Chung. Built from scratch, of course.
+          Built by Ryan Chung · B.S. Computer Science, Boston University.
         </p>
       </div>
     </footer>
