@@ -29,7 +29,7 @@ export default function Footer() {
 
         <div className="footer__bottom">
           <p className="footer__copyright">
-            Built by Ryan Chung · B.S. Computer Science, Boston University.
+            Built by Ryan Chung.
           </p>
           <nav className="footer__legal" aria-label="Legal">
             <Link to="/privacy">Privacy Policy</Link>

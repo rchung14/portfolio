@@ -20,13 +20,20 @@ export default function Home() {
             Freelance Web Developer
           </p>
           <h1 className="hero__title">
-            Websites that win <em className="accent-em">trust</em> before the first{' '}
-            <em className="accent-em">call</em>.
+            Websites for law and finance firms,{' '}
+            <em className="accent-em">built and maintained</em> end to end.
           </h1>
           <p className="lead hero__lead">
-            I design and build fast, credible sites for law firms, financial
-            consultants, and recruiting agencies, where the website is often the
-            first thing a prospective client judges you on.
+            I design, build, and manage professional websites for firms that
+            want a stronger online presence, without having to think about
+            the technical side. You focus on your practice; I handle the
+            site.
+          </p>
+          <p className="lead hero__lead">
+            I work almost exclusively with law firms, financial consultants,
+            and recruiters. I understand the tone these firms need and the
+            credibility their clients expect, so your site sounds right from
+            the first draft.
           </p>
           <div className="hero__ctas">
             <Link to="/work" className="btn btn--filled">

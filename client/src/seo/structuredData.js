@@ -46,16 +46,20 @@ export const structuredData = {
   '/services': [
     professionalService,
     service(
-      'React & Node web apps',
-      'Custom-built React front ends backed by clean, documented Node services.',
+      'Built to be found',
+      'Semantic, fast-loading sites structured for search from day one.',
     ),
     service(
-      'SEO-ready builds',
-      'Fast, semantic, cleanly structured sites built to rank from launch.',
+      'Designed to earn trust',
+      'Custom-designed, accessible sites for firms that need to read as credible.',
     ),
     service(
-      'Professional-services focus',
-      'Websites for law firms, financial consultants, and recruiting agencies.',
+      'Handled end to end',
+      "Built, hosted, and maintained on infrastructure managed on the client's behalf.",
+    ),
+    service(
+      'Ongoing care',
+      'Hosting, updates, and monitoring after launch, from $100/mo.',
     ),
   ],
   '/about': [professionalService, person],

@@ -1,45 +1,60 @@
 // Shared by the Services page (full blocks) and the Home editorial index.
 export const services = [
   {
-    id: 'engineering',
-    kicker: 'Engineering',
-    title: 'React & Node web apps',
-    short:
-      'Built from scratch and documented, so the next developer can pick it up without guesswork.',
-    paragraph:
-      'I build the front end in React and back it with a Node service that stays clean and well-documented. The aim is a site your team can grow into, rather than one you are quietly planning to replace in two years.',
-    bullets: [
-      'Component-driven front end, no page-builder bloat',
-      'Forms, booking, and CMS wired to a Node backend',
-      'Handover with docs your developers can read',
-    ],
-  },
-  {
-    id: 'visibility',
+    id: 'found',
     kicker: 'Visibility',
-    title: 'SEO-ready builds',
+    title: 'Built to be found',
     short:
-      'Fast, cleanly structured, and readable to search engines from the first commit rather than patched in later.',
+      'Fast, cleanly structured, and built to rank for the terms your clients search.',
     paragraph:
-      'Good search performance comes from how a site is built, not a plugin added at the end. I keep the markup semantic, the pages fast, and the structure mapped to how your clients actually search, so you have room to rank for the terms that matter.',
+      'Fast, cleanly structured, and readable to search engines from day one, so you have room to rank for the terms your clients actually search.',
     bullets: [
       'Semantic markup and structured data',
       'Core Web Vitals in the green on launch',
-      'Content structure mapped to real search intent',
+      'Google Business Profile setup',
     ],
   },
   {
-    id: 'specialization',
-    kicker: 'Specialization',
-    title: 'Professional-services focus',
+    id: 'trust',
+    kicker: 'Design',
+    title: 'Designed to earn trust',
     short:
-      'Law, finance, and recruiting. I know the tone and the credibility signals before you explain them.',
+      'A site that looks like the firm you are: considered and professional, not a template.',
     paragraph:
-      'I work almost exclusively with law firms, financial consultants, and recruiters. Because I already understand the tone these firms need and the compliance lines to stay inside, you spend less time explaining your world to me and the site sounds right sooner.',
+      'A site that looks like the firm you are: considered, professional, and clear, not a template.',
     bullets: [
-      'Messaging that carries authority without sounding like a pitch',
-      'Compliance- and disclaimer-aware content flows',
-      'Conversion paths tuned for considered, high-value buyers',
+      'Custom design and development, not a template',
+      'Mobile-first and accessible',
+      'Conversion paths built for considered, high-value buyers',
+    ],
+  },
+  {
+    id: 'handled',
+    kicker: 'Delivery',
+    title: 'Handled end to end',
+    short:
+      "You don't manage developers, dashboards, or hosting. I take care of the rest.",
+    paragraph:
+      "You don't manage developers, dashboards, or hosting. You tell me what you need; I take care of the rest.",
+    bullets: [
+      'Built from scratch and documented',
+      'Hosted on infrastructure I manage on your behalf',
+      'Maintained after launch, so nothing is left for you to run',
+    ],
+  },
+  {
+    id: 'care',
+    kicker: 'Ongoing',
+    title: 'Ongoing care — from $100/mo',
+    short:
+      'Hosting, updates, and monitoring after launch, so the site stays current without you thinking about it.',
+    paragraph:
+      'Once your site is live, I keep it running. Hosting, updates, content changes, and monitoring are all handled, so the website stays current and you never have to think about it. Pricing starts at $100/mo and scales with the size of your site and traffic. If you ever want to move on, everything transfers cleanly to your ownership.',
+    bullets: [
+      'Managed hosting and email as one monthly fee',
+      'Content updates and small changes on request within 2 business days',
+      'Google Business Profile setup and review guidance',
+      'Full ownership transfers if we part ways',
     ],
   },
 ];

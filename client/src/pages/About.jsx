@@ -35,11 +35,17 @@ export default function About() {
             I build real things for <em className="accent-em">real</em> businesses.
           </h1>
           <p className="about-intro__para">
-            I’m Ryan, a freelance web developer. For the last several years I’ve
-            built sites for firms whose reputation is most of what they sell: law
-            practices, financial consultants, recruiting agencies. For a business
-            like that, the website is usually where a prospective client forms a
-            first impression.
+            I’m Ryan Chung. I build and maintain websites for professional-services
+            firms: law practices, financial consultants, recruiting agencies. For a
+            business like that, the website is often where a prospective client
+            forms a first impression.
+          </p>
+          <p className="about-intro__para">
+            I studied Computer Science at Boston University and currently work in
+            finance, so I understand both the technical side and the world these
+            firms operate in. I stay close to current technology and bring a
+            strong engineering foundation to work that most web designers
+            approach from design alone.
           </p>
           <p className="about-intro__para">
             I work solo and stay hands-on from the first call to launch. You deal

@@ -2,7 +2,7 @@ export const routesMeta = {
   '/': {
     title: 'Ryan Chung | Freelance Web Developer for Professional-Services Firms',
     description:
-      'Ryan Chung builds fast, credible websites for law firms, financial consultants, and recruiting agencies. Custom React builds with SEO baked in from day one.',
+      'Ryan Chung builds and maintains websites for law firms, financial consultants, and recruiting agencies, handled end to end so you never have to touch the technical side.',
     canonical: 'https://ryanchung.dev/',
   },
   '/work': {
@@ -12,9 +12,9 @@ export const routesMeta = {
     canonical: 'https://ryanchung.dev/work',
   },
   '/services': {
-    title: 'Services | Ryan Chung, React & SEO Web Design',
+    title: 'Services | Ryan Chung, Web Design for Law & Finance Firms',
     description:
-      'React & Node web apps, SEO-ready builds, and professional-services focus. Three services, done to a standard.',
+      'Search-ready builds, credible design, and end-to-end handling for law firms, financial consultants, and recruiters, plus ongoing care from $100/mo.',
     canonical: 'https://ryanchung.dev/services',
   },
   '/pricing': {
